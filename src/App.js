@@ -3,14 +3,19 @@ import './App.css';
 import Header from './components/layouts/Header';
 import Dashboard from './components/leads/Dashboard';
 
+import { Provider } from 'react-redux';
+import store from './store'
+
 function App() {
   return (
-    <Fragment>
-      <Header />
-      <div className="container">
-        <Dashboard />
-      </div>
-    </Fragment>
+    <Provider store={store}>
+      <Fragment>
+        <Header />
+        <div className="container">
+          <Dashboard />
+        </div>
+      </Fragment>
+    </Provider>
   );
 }
 
