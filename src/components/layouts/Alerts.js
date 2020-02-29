@@ -9,10 +9,8 @@ export class Alerts extends Component {
         // TODO email unique
         // array.join() transfor array -> string
         if (error !== prevProps.error) {
-            const result = error.msg.map(v => `${v.field} ${v.defaultMessage}`);
-            if (result.length > 0) {
-                alert.error(result[0]);
-            }
+            console.log(error);
+            alert.error(`status: ${error.status} msg: ${error.msg}`);
         }
 
         if (message !== prevProps.message) {
