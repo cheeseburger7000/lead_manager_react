@@ -6,11 +6,13 @@ import PropTypes from 'prop-types';
 export class Alerts extends Component {
     componentDidUpdate(prevProps) {
         const { error, alert, message } = this.props;
-        // TODO email unique
-        // array.join() transfor array -> string
         if (error !== prevProps.error) {
             console.log(error);
             alert.error(`status: ${error.status} msg: ${error.msg}`);
+            // TODO email unique
+            // if (error.message.email) {
+            //     alert.error();
+            // }
         }
 
         if (message !== prevProps.message) {
