@@ -10,9 +10,9 @@ export class Form extends Component {
         message: ''
     }
 
-    // static propTypes = {
-    //     addLead: PropTypes.func.isRequired
-    // };
+    static propTypes = {
+        addLead: PropTypes.func.isRequired
+    };
 
     onChange = e => this.setState({ [e.target.name]: e.target.value });
 
