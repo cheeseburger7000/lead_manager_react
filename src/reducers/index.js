@@ -2,10 +2,12 @@ import { combineReducers } from 'redux';
 import leadsReducer from './leads'
 import errorsReducer from './errors'
 import messageReducer from './message'
+import authReducer from './auth'
 
 // 2
 export default combineReducers({
     leadsReducer,
     errorsReducer,
-    messageReducer
+    messageReducer,
+    authReducer
 });
