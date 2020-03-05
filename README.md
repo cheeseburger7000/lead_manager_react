@@ -7,6 +7,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] react-router-dom
 - [x] axios
 
+## 项目依赖
+
+```
+yarn add redux react-redux redux-thunk redux-devtools-extension
+
+// https://github.com/schiehll/react-alert
+yarn add react-alert react-alert-template-basic react-transition-group
+
+yarn add react-router-dom
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
